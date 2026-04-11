@@ -73,18 +73,21 @@
     }
     .hero::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse at 60% 40%, rgba(144,20,18,.18) 0%, transparent 65%); }
     .hero > * { position: relative; }
-    .hero-badge { background: var(--secondary); color: #fff; font-weight: 800; font-size: .8rem; padding: .35rem 1rem; border-radius: 999px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.2rem; }
+    .hero-badge { background: var(--accent-green); color: #fff; font-weight: 800; font-size: .8rem; padding: .35rem 1rem; border-radius: 999px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 1.2rem; }
     .hero h1 { font-family: 'Fraunces', serif; font-size: clamp(2.4rem, 6vw, 4.2rem); color: #fff; line-height: 1.1; max-width: 780px; margin-bottom: 1.2rem; }
     .hero h1 em { color: var(--secondary); font-style: normal; }
     .hero p { color: rgba(255,255,255,.85); font-size: 1.15rem; max-width: 560px; line-height: 1.7; margin-bottom: 2rem; }
     .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
     .btn { display: inline-block; padding: .8rem 2rem; border-radius: 999px; font-weight: 800; font-size: 1rem; text-decoration: none; cursor: pointer; transition: transform .2s, box-shadow .2s; border: none; font-family: 'Nunito', sans-serif; }
     .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.2); }
-    .btn-primary { background: var(--secondary); color: #fff; }
+    .btn-primary { background: var(--accent-gold); color: #fff; }
     .btn-outline  { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.6); }
     .btn-outline:hover { border-color: #fff; }
     .hero-stats { display: flex; gap: 2.5rem; margin-top: 3.5rem; flex-wrap: wrap; justify-content: center; }
     .stat strong { display: block; color: var(--secondary); font-size: 2rem; font-family: 'Fraunces', serif; }
+    .stat strong2 { display: block; color: var(--accent-green); font-size: 2rem; font-family: 'Fraunces', serif; }
+    .stat strong3 { display: block; color: var(--accent-gold); font-size: 2rem; font-family: 'Fraunces', serif; }
+    .stat strong4 { display: block; color: var(--light); font-size: 2rem; font-family: 'Fraunces', serif; }
     .stat span { color: rgba(255,255,255,.75); font-size: .85rem; }
 
     /* ── SECCIONES COMUNES ────────────────────────── */
@@ -186,7 +189,7 @@
 
 <!-- ══ HERO ════════════════════════════════════════ -->
 <header class="hero">
-  <div class="hero-badge">Sitio web de la Comunidad Educativa</div>
+  <div class="hero-badge">Escuela Pública Brasil de Santa Ana</div>
   <h1>¡Juntos construimos una <em>mejor</em> educación!</h1>
   <p>Bienvenidos a nuestra página de la comunidad educativa de la escuela Brasil de Santa Ana. Aquí podrás encontrar información del ciclo escolar, actividades y novedades.</p>
   <div class="hero-btns">
@@ -195,9 +198,9 @@
   </div>
   <div class="hero-stats">
     <div class="stat"><strong>159</strong><span>Estudiantes</span></div>
-    <div class="stat"><strong>20</strong><span>Docentes</span></div>
-    <div class="stat"><strong>7</strong><span>Personal administrativo</span></div>
-    <div class="stat"><strong>04</strong><span>Circuito</span></div>
+    <div class="stat"><strong2>20</strong2><span>Docentes</span></div>
+    <div class="stat"><strong3>7</strong3><span>Personal administrativo</span></div>
+    <div class="stat"><strong4>04</strong4><span>Circuito</span></div>
   </div>
 </header>
 
