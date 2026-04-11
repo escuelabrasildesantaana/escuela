@@ -410,4 +410,13 @@
     } catch (err) {
       console.error('Error cargando datos:', err);
       document.getElementById('news-grid').innerHTML =
-        `<div class="error-state">⚠️ No se pudieron ca
+        `<div class="error-state">⚠️ No se pudieron cargar las noticias. Intente más tarde.</div>`;
+      document.getElementById('extra-grid').innerHTML =
+        `<div class="error-state">⚠️ No se pudieron cargar las actividades. Intenta más tarde.</div>`;
+    }
+  }
+
+  cargarDatos();
+</script>
+</body>
+</html>
