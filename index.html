@@ -48,7 +48,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: 'Open Sans', sans-serif; color: var(--dark); background: var(--white); overflow-x: hidden; }
 
-    /* ── NAVBAR ───────────────────────────────────── */
+  /* ── NAVBAR ───────────────────────────────────── */
     nav {
       position: sticky; top: 0; z-index: 999;
       background: var(--nav);
@@ -56,8 +56,9 @@
       padding: 0 2rem;
       box-shadow: 0 2px 12px rgba(0,0,0,.2);
     }
-    .nav-logo { display: flex; align-items: center; text-decoration: none; padding: .6rem 0; }
-    .nav-mep-logo { height: 42px; width: auto; object-fit: contain; display: inline-block; }
+    .nav-logo { display: flex; align-items: center; gap: .75rem; text-decoration: none; padding: .6rem 0; }
+    .nav-mep-logo { height: 42px; width: auto; object-fit: contain; display: block; }
+    .nav-logo-divider { width: 1px; height: 32px; background: rgba(0,0,0,.15); }
     .nav-links { display: flex; gap: .2rem; }
     .nav-links a { color: rgba(29,29,31,.85); text-decoration: none; font-size: .88rem; font-weight: 700; padding: .55rem .85rem; border-radius: 8px; transition: background .2s; }
     .nav-links a:hover { background: rgba(0,0,0,.18); color: var(--gray); }
@@ -182,8 +183,7 @@
 <nav>
   <a href="#" class="nav-logo">
     <img src="logo_mep.png" alt="Ministerio de Educación Pública" class="nav-mep-logo"/>
-  </a>
-  <a href="#" class="nav-logo">
+    <div class="nav-logo-divider"></div>
     <img src="Escudo_de_la_escuela.jpeg" alt="Escuela Brasil de Santa Ana" class="nav-mep-logo"/>
   </a>
   <div class="nav-links">
